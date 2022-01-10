@@ -1,0 +1,117 @@
+@import url("https://fonts.googleapis.com/css?family=Poppins:200,300,400,500,600,700,800,900,&display=swap");
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: "Poppins", sans-serif;
+}
+section {
+  position: relative;
+  width: 100%;
+  min-height: 100vh;
+  padding: 100px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  background: white;
+}
+header {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  margin-top: 20px;
+  padding: 20px 100px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+header .logo {
+  position: relative;
+  max-width: 80px;
+}
+header ul {
+  position: relative;
+  display: flex;
+}
+header ul li {
+  list-style: none;
+}
+header ul li a {
+  display: inline-block;
+  color: #333;
+  font-weight: 600;
+  margin-left: 40px;
+  text-decoration: none;
+  padding: 8px 20px;
+}
+header ul li .active {
+  background: #225294;
+  border-radius: 50px;
+  color: white;
+  transition: 0.5s;
+}
+header ul li .active:hover {
+  background: red;
+  border-radius: 50px;
+  color: white;
+}
+
+.form-pemesanan {
+  border: 3px solid black;
+  border-radius: 5px;
+  height: 64%;
+  width: 50vh;
+  padding: 10px;
+  position: absolute;
+  transform: translatex(130%);
+}
+
+.textArea {
+  border: 3px solid #225294;
+}
+
+input[type="text"] {
+  width: 100%;
+  padding: 23px 32px;
+  margin: 30px;
+  margin-left: 0px;
+  border: 2px solid #225294;
+  box-sizing: border-box;
+}
+
+@media screen and (max-width: 1500px) {
+  .form-pemesanan {
+    border: 3px solid black;
+    border-radius: 5px;
+    height: 64%;
+    width: 50vh;
+    padding: 10px;
+    position: absolute;
+    transform: translatex(120%);
+  }
+}
+
+@media screen and (max-width: 1250px) {
+  .form-pemesanan {
+    border: 3px solid black;
+    border-radius: 5px;
+    height: 64%;
+    width: 50vh;
+    padding: 10px;
+    position: absolute;
+    transform: translatex(60%);
+  }
+}
+
+@media screen and (max-width: 1000px) {
+  .form-pemesanan {
+    border: 3px solid black;
+    border-radius: 5px;
+    height: 64%;
+    width: 50vh;
+    padding: 10px;
+    position: absolute;
+    transform: translatex(10%);
+  }
+}
